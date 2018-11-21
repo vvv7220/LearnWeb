@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+header{
+width: 100%;
+height: 130px;
+background: #f6f6f6;
+top:0;
+}
+main{
+width: 100%;
+height: 100%;
+background: #f6f6f6;
+position: fixed;
+display: flex;
+}
+.top{
+width: 100%;
+height: 60px;
+background: lightblue;
+position: fixed;
+}
+.left{
+width:15%;
+height: 405px;
+border: solid 1px lightblue;
+border-radius: 5px;
+margin: auto;
+padding: 5px;
+}
+.right{
+width:15%;
+height: 405px;
+border: solid 1px lightblue;
+border-radius: 5px;
+margin: auto;
+}
+
+.content{
+width: 70%;
+height: 100%;
+background: snow;
+margin: auto;
+overflow: scroll;
+margin-top: 100px;
+background: #f6f6f6;
+}
+article{
+width: 90%;
+min-height: 600px;
+border: 1px solid lightblue;
+border-radius: 10px;
+margin: 10px auto;
+}
+footer{
+width: 100%;
+height: 60px;
+background: lightblue;
+position: absolute;
+bottom:0;
+}
+
+/*Header animation*/
+#slider {
+width: 100%;
+height: 130px;
+background: #f6f6f6;
+position: relative;
+top: 0;
+overflow: hidden;
+}
+
+#dozer {
+position: absolute;
+left:0;
+top: 0;
+transition: left 8s ease-out;
+z-index: 2;
+}
+
+#code {
+width: 100%;
+height: 130px;
+background-image: url(../images/code.jpg);
+background-size: 100%;
+position: absolute;
+left:0;
+top:0;
+transition: left 28s ease;
+z-index: 3;
+}
