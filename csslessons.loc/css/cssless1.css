@@ -71,7 +71,16 @@ position: relative;
 top: 0;
 overflow: hidden;
 }
-
+#slideHeader{
+	position: absolute;
+	left:50%;
+	margin-left: -350px;
+	top: 40px;
+	opacity: 0;
+	transition: opacity 22s ease-out;
+	z-index: 1;
+	text-shadow: 0 1px 1px cyan;
+}
 #dozer {
 position: absolute;
 left:0;
@@ -151,13 +160,14 @@ aside h3{
 	margin-top: 20px;
 }
 
-header h1{
-	top: 75px;
+header code{
+	top:5px;
 	margin-left: 50%;
-	left: -300px;
+	left: -430px;
 	display: inline-block;
 	position: absolute;
 	opacity: 1;
 	transition: opacity 2s ease-in-out;
+	font-size: 24px; 
 }
 
