@@ -1,0 +1,7 @@
+a {
+  transition: transform 10s linear;
+}
+
+a:hover {
+  transform: rotate(5turn);
+}

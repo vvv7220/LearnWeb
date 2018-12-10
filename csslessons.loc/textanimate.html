@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Анимация текста</title>
+  <link rel="stylesheet" href="css/textanimate.css">
+  <script src="js/textanimate.js" defer></script>
+</head>
+<body>
+ <div class="content">
+  <div id="b1" class="in"><input type="text" id="search"> <button onclick="searchInText()">Search</button>
+    <p id="textF">Text test Text</p>
+  </div>
+
+ <div id="b2" class="in">
+ <p id="par"> text test text test</p>
+ </div>
+ <div id="b3" class="in">
+   <div id="lights">
+  <div class="circle red"></div>
+  <div class="circle yellow" ></div>
+  <div class="circle green"></div>
+</div>
+  </div>
+</div>
+ <div class="info">
+   <h3><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">Метод splice()</a></h3>
+  <p>
+    Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.
+  </p>
+  <p>
+    Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.
+  </p>
+<pre>
+  array.splice(start, deleteCount[, item1[, item2[, ...]]])
+</pre>
+<h4>Параметры</h4>
+<strong>start</strong>
+<p>
+    Индекс, по которому начинать изменять массив. Если больше длины массива, реальный индекс будет установлен на длину массива. Если отрицателен, указывает индекс элемента с конца.</p>
+
+    <strong>deleteCount</strong>
+<p>
+   Целое число, показывающее количество старых удаляемых из массива элементов. Если deleteCount равен 0, элементы не удаляются. В этом случае вы должны указать как минимум один новый элемент. Если deleteCount больше количества элементов, оставшихся в массиве, начиная с индекса start, то будут удалены все элементы до конца массива.</p>
+   <strong>itemN</strong>
+   <p>
+      Необязательные параметры. Добавляемые к массиву элементы. Если вы не укажете никакого элемента, splice() просто удалит элементы из массива.</p>
+
+
+      
+   
+
+
+
+ </div>
+
+</body>
+</html>

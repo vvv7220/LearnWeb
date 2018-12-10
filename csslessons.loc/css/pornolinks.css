@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Ball and background */
+#sex {
+  filter: blur(3px);
+  transition: transform 1s linear;
+  border-radius: 1000px;
+  box-shadow: -8px -14px 77px -6px #000000 inset;
+  background-position: 10px 10px;
+  filter: blur(0px);
+  background-image: url("https://im0-tub-ru.yandex.net/i?id=bea72e713c2e51f50aea97b8fe79dc67-l&n=13")
+    /* https://im0-tub-ru.yandex.net/i?id=dd4b487c17977bc1eafd2c3ba2aadeb7-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=fb1c43eb0fa9e8d3f8d27efcc931c464-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=cdeaf2ba5d613790559ba882a195f6f1-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=8dca6c8c03d3025e66619471ec704436-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=ad2e34271c57e6d71088cc688c48a994-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=351155223521cc8b101917d2d1487dc2-l&n=13 */
+    /* https://im0-tub-ru.yandex.net/i?id=bf79ed17ca7ba9db5391215ec0b5afb8-l&n=13 */
+
+}
+
+#sex:hover {
+  transform: rotateX(360deg) rotateY(360deg)
+}
+
+/* Text area and buttons */
+<style>body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.zagl {
+  text-align: center;
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+
+.text {
+  padding-top: -15px;
+  font-family: Verdana;
+  color: white;
+  font-size: 15px;
+}
+
+#yes:hover {
+  background-color: #00ff00;
+  color: blue;
+  cursor: pointer;
+}
+
+#no:hover {
+  background-color: grey;
+  color: red;
+  cursor: not-allowed;
+}
+
+#yes {
+  transform-origin: 2em 0;
+  transform: scale(1.3, 1.3);
+  margin: 0;
+}
+
+#no {
+  transform-origin: 2em 1em;
+  transform: scale(0.6, 0.6);
+  margin: 0;
+}
+
+#bbb {
+
+  -o-transition: transform 4s linear;
+  -ms-transition: transform 4s linear;
+  -moz-transition: transform 4s linear;
+  -webkit-transition: transform 4s linear;
+  transition: transform 4s linear;
+}
+
+#bbb:hover {
+  -o-transform: rotate(5turn);
+  -ms-transform: rotate(5turn);
+  -moz-transform: rotate(5turn);
+  -webkit-transform: rotate(5turn);
+  transform: rotate(5turn);
+  /*  rotateX(1080deg) rotateY(1080deg)*/
+}

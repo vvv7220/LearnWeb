@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Стрелочные функции</title>
+  <link rel="stylesheet" href="css/textanimate.css">
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+  <script src="js/arrowfun.js" defer></script>
+</head>
+<body>
+  <div class="content">
+    
+ <div id="b3" class="in">
+  </div>
+</div>
+
+
+ <div class="info">
+   <h3><a href="https://habr.com/company/mailru/blog/213455/" target="_blank">Стрелочные функции</a></h3>
+  <p>
+    Синтаксис стрелочных функций может быть различен, в зависимости от того, как вы объявляете функцию. Объявление всегда начинается со списка аргументов, далее следует стрелка и тело функции. И список аргументов, и тело функции могут иметь различную форму, в зависимости от того, что вы пишете.
+  </p>
+  <strong>Один параметр</strong>
+  <p>
+    Объявление стрелочной функции, которая принимает один аргумент и просто возвращает его, выглядит очень просто:
+  </p>
+
+<pre>
+  var reflect = value => value;
+// эквивалент
+var reflect = function(value) { 
+  return value; 
+}
+</pre>
+<p>
+  Когда у стрелочной функции только один аргумент, то он может быть объявлен без скобок. Следующее после стрелки тело функции также может быть без фигурных скобок и может не содержать ключевого слова return.</p>
+
+    <strong>Несколько параметров</strong>
+<p>
+  Но если вы хотите объявить более одного параметра, то должны обрамить список параметров в круглые скобки:</p>
+  <pre>
+    var sum = (num1, num2) => num1 + num2;
+    // эквивалент
+    var sum = function(num1, num2) { return num1 + num2; };    
+  </pre>
+  <strong>Без параметров</strong>
+   <p>
+    Аналогично, функция безо всяких аргументов, должна иметь пустой список параметров, заключённый в круглые скобки:
+  </p>
+  <pre>var sum = () => 1 + 2;
+    // эквивалент
+    var sum = function() { return 1 + 2; };
+  </pre>
+<strong>Традиционный синтаксис тела функции</strong>
+<p>Вы можете воспользоваться синтаксисом традиционных функций для тела стрелочной функции, когда оно содержит более одного выражения. То есть обернуть функцию в фигурные скобки и добавить ключевое слово return:
+</p>
+<pre>var sum = (num1, num2) => { return num1 + num2; }
+  // эквивалент
+  var sum = function(num1, num2) { return num1 + num2; };</pre>
+  <p>Тело функции будет обработано точно так же, как и в случае классических функций, за исключением того, что значения специальных переменных <b>this, super и arguments</b> будут вычисляться по-другому.</p>
+
+ </div>
+ <div class="info">
+
+    <iframe width="100%" height="300" src="//jsfiddle.net/vvv7220/5f9dwh40/2/embedded/js,html,css,result/dark/?menuColor=FFDD00&accentColor=D0FF00&bodyColor=ccc" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+ </div>
+
+</body>
+</html>

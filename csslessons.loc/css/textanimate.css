@@ -1,0 +1,66 @@
+*{
+margin: 0;
+padding: 0;
+}
+.content{
+  float: left;
+  margin: 20px 20px;
+}
+.in{
+width: 600px;
+height: 100px;
+border-radius: 5px;
+margin: 20px auto;
+border: 2px solid darkblue;
+padding: 5px;
+}
+.circle{
+width: 25px;
+height: 25px;
+border-radius: 100%;
+background: red;
+}
+#lights{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+  .info{
+    width: 580px;
+    height: 400px;
+    border-radius: 5px;
+    top: 0;
+    margin: 40px 700px;
+    border: 2px solid darkblue;
+    color: #880E02;
+    font-weight: 500;
+    float: right;
+    padding: 5px;
+    position: fixed;
+    overflow: scroll;
+  }
+  pre{
+color: darkblue;
+font-family: 'Chakra Petch', sans-serif;
+line-height: 2;
+  }
+  strong{
+    background: #ccc;
+    color: black;
+  }
+  #newPar{
+    background: red;
+  }
+  /* Мерцание текста */
+  /* #par{
+    animation: blink 400ms alternate infinite;
+  }
+  @keyframes blink {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      } */
+
+      
