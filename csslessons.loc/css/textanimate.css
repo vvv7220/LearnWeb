@@ -63,4 +63,21 @@ line-height: 2;
         opacity: 0;
       } */
 
-      
+      #text{
+        width: 110px;
+        font-size:40px;
+        font-weight: bold;
+        color: blue;
+        text-shadow: 0 2px 2px #000;
+        margin: 0 auto;
+      }
+      span{
+        width: 110px;
+        font-size:40px;
+        font-weight: bold;
+        color: blue;
+        text-shadow: 0 2px 2px #000;
+        margin: 0 auto;
+        transition: 1000ms;
+    }
+    

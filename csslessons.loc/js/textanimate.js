@@ -27,3 +27,22 @@
 //  }
 // let arrText = b2.split('');
 // b2.innerText = arrText;
+//Исчезание букв
+window.onclick = function () {
+let arrLetters = [];
+let tb = document.querySelector('.textbox').children;
+let ti = setInterval(
+function(){
+  do{
+let text = tb[r=Math.floor(Math.random() * tb.length)];
+}
+while (~arrLetters.indexOf(r)&&arrLetters.length!=tb.length);
+if(arrLetters.length-tb.length){
+  arrLetters[arrLetters.length]=r;
+  text.innerHTML = [...text.innerText].map(a => '<span>' + a + '</span>').join('');
+  i = s = 0;
+        let tim = setInterval(()=>(s||(text.childNodes[i].style.opacity='0'),
+        s&&clearInterval(tim),++i==text.childNodes.length&&(i=0,s++)),100);
+} else clearInterval(ti);
+
+}, 3000);}

@@ -1,0 +1,103 @@
+@font-face {
+	font-family: Acrom-bold; 
+	src:url(../fonts/acrom800.otf);
+}
+@font-face {
+	font-family: Acrom; 
+	src:url(../fonts/acrom400.otf);
+}
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: Acrom;
+}
+header{
+min-height: 450px;
+background: url(../images/header_bg.png);
+background-size: cover;
+}
+.top-line{
+	height:85px;
+	background: rgba(3,4,5,.5);
+	padding: 40px;
+}
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+  
+}
+.logo{
+	left:80px;
+	margin-top: 20px;
+}
+.phone{
+	float:right;
+	color:#fff;
+	font-size:23px;
+	font-weight:500;
+	font-family:Acrom;
+	margin-right: 25px;
+}
+.callback{
+    /* Style for "<Rectangle" */
+height: 35px;
+font-family: Acrom;
+font-size: 9px;
+color:#fff;
+border: solid 2px #018dc4;
+border-radius: 20px;
+padding: 5px 10px;
+background: none;	
+margin-top: 25px;
+margin-left: 20px;
+cursor:pointer;
+float:right;
+letter-spacing: 0.23px;
+}
+.main{
+    text-align: center;
+}
+.wrap h1{
+color: #ffffff;
+line-height: 52px;
+text-transform: uppercase;
+font-size: 37px;
+}
+.wrap h2{
+    /* Style for "Самый прос" */
+color: #00a9ea;
+font-size: 19px;
+line-height: 26px;
+}
+.register{
+    /* Style for "зарегистри" */
+/* Style for "<Rectangle" */
+width: 201px;
+height: 45px;
+background: #ee6e22;
+border-radius: 15px;
+border: none;
+margin-top: 80px;
+color: #ffffff;
+font-size: 10px;
+font-weight: 700;
+text-transform: uppercase;
+/* Text style for "зарегистри" */
+letter-spacing: 0.25px;
+}
+.callback2{
+    width: 160px;
+    height: 36px;
+    float: none;
+    margin: 40px 0 134px 0;
+}
+.callback2 img{
+    width: 16px;
+}
+.callback2 span{
+    position: relative;
+    top: -5px;
+    padding: 0 10px;
+}
