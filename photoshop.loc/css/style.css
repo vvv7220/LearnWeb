@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Acrom-bold";
+    src: url(../fonts/acrom800.otf);
+}
+@font-face {
+    font-family: "Acrom";
+    src: url(../fonts/acrom400.otf);
+}
+*{
+    margin: 0;
+}
+header{
+    /* Style for "Group 1" */
+width: 1200px;
+height: 753px;
+background-size: cover;
+background: url(../images/header_bg.png);
+margin: 0 auto;
+    
+}
+.top-block{
+    /* Style for "<Rectangle" */
+width: 1200px;
+height: 84px;
+background: rgba(3, 4, 5, 0.5);
+padding: 40px 0;
+}
+.wrap{
+width: 1030px;
+margin: 0 auto;
+}
+.phone{
+    /* Style for "+38 (093)" */
+height: 75px;
+color: #ffffff;
+font-family: "Acrom";
+font-size: 23px;
+font-weight: 400;
+float: right;
+margin-right: 30px;
+}
+.callback{
+    /* Style for "<Rectangle" */
+
+height: 35px;
+color: #ffffff;
+font-family: "Acrom";
+font-size: 9px;
+font-weight: 400;
+letter-spacing: 0.23px;
+float: right;
+background: none;
+margin-top: 20px;
+border: solid 2px #0490c7;
+border-radius: 20px;
+}
+.logo{
+    margin-top: 20px;
+}
