@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana;
+}
+#goo_log{
+    width: 450px;
+    height: 500px;
+    margin: 165px auto auto auto;
+    border: solid 1px #ccc;
+    border-radius: 8px; 
+}
+#goo_pass{
+    width: 450px;
+    height: 500px;
+    margin: 165px auto auto auto;
+    border: solid 1px #ccc;
+    border-radius: 8px; 
+}
+.gwrap{
+    width: 420px;
+    height: 400px;
+    background: snow;
+    margin: 50px auto;
+}
+.glogo{
+    width: 90px;
+    height: 30px;
+    margin: auto 152px;
+}
+.entry{
+  width: 395px;
+  height: 70px;
+  margin: auto auto;
+}
+.entry span{
+    margin: auto 160px ;
+    line-height: 2em;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.advice{
+    font-size: 14px;
+    margin: auto 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fild{
+width: 360px;
+height: 55px;
+border: solid 2px #5D80B6;
+border-radius: 5px;
+margin: auto auto;
+display: block;
+}
+  
+.ftext{
+width: 180px;
+height: 20px;
+background: #fff;
+color: #5D80B6;
+position: relative;
+top: 8px;
+left: 35px;
+padding: 4px;
+font-size: 12px;
+font-family: verdana;
+}
+.remind{
+font-family: Verdana;
+font-size: 12px;
+color: #5D80B6;
+margin: 30px 28px;
+font-weight: 700;
+display: inline-block;
+}
+.remind2{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #afafb2;
+    font-weight: 400;
+    display: inline-block;
+    padding: 28px 28px;
+    }
+    .remind3{
+        font-family: Verdana;
+        font-size: 12px;
+        color: #5D80B6;
+        margin: 28px 3px;
+        font-weight: 700;
+        }
+    .next{
+height: 60px;
+display: flex;
+justify-content: space-between;
+font-family: Verdana;
+margin: 25px 0;;
+    }
+    #crt{
+        width: 130px;
+        height: 36px;
+        font-size: 13px;
+        color: #5D80B6;
+        
+        line-height: 1.7em;
+        font-weight: bold;
+        margin: 2px 18px;
+        cursor: pointer;
+        border: none;  
+        border-radius: 5px;
+        background: none;
+    }
+    #crt:hover{
+background: #F8F8FF;
+
+    }
+    .nxt{
+width: 90px;
+height: 37px;
+border-radius: 5px;
+background: #1373ea;
+color: #fff;
+border: none;
+cursor: pointer;
+    }
+.nxt:hover{
+    box-shadow: 0 1px 1px #5D80B6;
+    
+}
+#slider{
+
+    width: 450px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 50px auto;
+    overflow: hidden;
+}
+#polosa {
+    background: pink;
+    width: 900px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+#goo_pass{
+position: absolute;
+overflow: hidden;
+width: 450px;
+float: left;
+}
