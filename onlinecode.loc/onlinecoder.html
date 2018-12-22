@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--
+<head>
+    <meta charset="UTF-8">
+    <title>Он-лайн редактор</title>
+    
+</head>
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Как посимвольно изменить прозрачность рандомного слова?</title>
+<!--
+    <link rel="stylesheet" href="css/code.css">
+    <script src="js/code.js" defer></script>
+-->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            outline: 0 !important;
+            transition: 2900ms;
+        }
+        html,body{
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: #ffb;
+        }
+        a,b{
+            margin: 0.3em;
+            display: inline-block;
+        }
+        /*---------------------------------*/
+        #avatar,#menu{
+            position: fixed;
+            left: calc(100vw - 110px);
+            width: 90px;
+            top: 10px;
+            height: 90px;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+        #menu{
+            font-size: 0px;
+            border: black 0px ridge;
+            text-align: left;
+            color: rgba(0,0,0,0);
+            transition: all 3s,color 2s,font-size 2s;
+            overflow: hidden;
+            text-align: right;
+
+        }
+        #menu:hover{
+            border-radius: 1vw;
+            width: 50vw;
+            height: 50vh;
+            left: calc(48.8vw);
+            border: red 3px ridge;
+            background-color: rgba(255,255,0,0.9);
+            color: rgba(0,0,0,1);
+            font-size: calc( 2vh + 2vw );
+            text-align: left;
+            box-shadow: 3px 5px 20px 5px rgba(255,255,0,0.4);
+        }
+        div[id="menu"]>div{
+            position: absolute;
+            margin: 2%;
+
+        }
+        textarea{
+            box-shadow: 10px 5px 20px 7px rgba(0,0,0,1);
+            border: 1px green solid;
+            transition: box-shadow 500ms;
+            transition: border 4000ms;
+        }
+        textarea:hover{
+            box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.9);
+            border: 1px yellow solid;
+        }
+        button{
+            background: #fa0;
+            background: linear-gradient(to top, #fa0 20%, #fe2 50%, #fa0 80%);
+            box-shadow: 4px 2px 8px 2px rgba(0,0,0,0.8);
+            padding: 1rem 3rem 1rem 3rem;
+            border: none;
+            margin: 1rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            transition: 100ms;
+            border: 2px #e90 solid;
+        }
+        button:hover{
+            box-shadow: 6px 3px 12px 4px rgba(0,0,0,0.8);
+        }
+        button:disabled{
+            opacity: 0;
+            transition: 6000ms;
+            cursor: auto;
+
+        }
+        .tit {
+            display: inline-block;
+            position: relative;
+
+        }
+        .tit:hover::after {
+            content: attr(d-title);
+            position: absolute;
+            left: 50%; top: 1.2rem;
+            z-index: 1;
+            background: rgba(255,255,127,0.9);
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #000;
+            padding: 5px 10px;
+            border: 1px solid #333;
+            box-shadow: 3px 5px 20px 5px rgba(0,0,0,0.5);
+            white-space:pre;
+            border-radius: 0.5rem;
+            color: rgba(0,0,0,1);
+        }
+    </style>
+    <style>
+        span{
+            transition: 1000ms;
+        }
+        a{
+            margin-right:20px;
+            display:block;
+            text-decoration:none;
+        }
+</style>
+</head>
+<body>
+<b class="tit" d-title="Почему мой код не работает
+_https://jsfiddle.net/tLza5kbj/
+Алгоритм:
+-Выбираем рандомное слово и считаем к-во символов в нем
+-меняем прозрачность каждого символа раз в 3 секунды
+-выводим в div заменяя существующие символы в слове нашим непрозрачным">Как посимвольно изменить прозрачность рандомного слова?</b><br>
+<a class="tit" d-title="Перейти на страницу вопроса" target="_blank" href="https://otvet.mail.ru/question/209174112" >https://otvet.mail.ru/question/209174112</a><br>
+<div id="cod" style="padding: 1em;">
+    <div class="floating-text-box">
+        <a href="#" >Рестораны</a>
+        <a href="#" >Музеи</a>
+        <a href="#" >Развлечения</a>
+        <a href="#" >Клубы</a>
+        <a href="#">Соборы</a>
+        <a href="#" >Отели</a>
+        <a href="#">Достопромечательности</a>
+        <a href="#" >Парки</a>
+        <a href="#" >Сауны</a>
+        <a href="#" >Пабы</a>
+        <a href="#" >Древности</a>
+        <a href="#" >Лаунж-бары</a>
+    </div>
+<button onclick="pusk();this.disabled=1;">Пуск</button>
+<script>
+pusk=()=>{
+rb=[];
+    fl = document.querySelector('.floating-text-box').children;
+    ti=setInterval(()=>{
+        do{
+        f_ = fl[r=Math.floor(Math.random() * fl.length)];
+        }while (~rb.indexOf(r)&&rb.length!=fl.length);
+                if(rb.length-fl.length){
+                    rb[rb.length]=r;
+            f_.innerHTML = [...f_.innerText].map(a => '<span>' + a + '</span>').join('');
+            i = s = 0;
+            tim = setInterval(()=>(s||(f_.childNodes[i].style.opacity='0'),
+            s&&clearInterval(tim),++i==f_.childNodes.length&&(i=0,s++)),100);
+
+        } else clearInterval(ti);
+},3000);}
+</script></div>
+    <textarea id="t_cod" style="
+position: absolute;
+overflow: auto;
+padding:1rem;
+left: 30vw;
+width:calc(100vw - 2rem - 30vw);
+top:50px;
+height:calc(100vh - 2rem - 53px);
+white-space:pre;
+color: lime;
+background-color: black;
+"></textarea>
+    <script>
+        t_cod.value=document.getElementsByTagName('style')[1].outerHTML+cod.innerHTML;
+    </script>
+    <div id="avatar" style="
+background-image: url('https://filin.mail.ru/pic?d=fNJzOONV-xfOQIHXoqjBC3XVMSJEntmSlKKpalOoll2NiAmITcIMoJzhop7JpQ~~&width=180&height=180');
+background-size:cover;box-shadow: 3px 5px 20px 5px rgba(0,0,0,0.4);border: 1px rgba(255,0,0,0.5) solid;
+"></div>
+    <div id="menu"><div id="menu1">
+        <a href="https://otvet.mail.ru/profile/id253359067/feed/updates/">walll-es@mail.ru</a><br>
+        <br>
+        <span style="font-size: 0.6em;white-space: nowrap;">Коммерческие предложения можете присылать на почту.</span>
+    </div>
+    </div>
+    <script>
+        c_i=0;setInterval(()=>document.body.style.backgroundColor=["#f88","#ff8","#8f8","#8ff","#88f","#f8f"][c_i=6==++c_i?0:c_i],3000);
+        menu.onmouseout=()=>(menu1.style.cssText+="font-size:0;color: rgba(0,0,0,0);left: 50%;transition: 1s;");
+        menu.onmouseover=()=>(menu1.style.cssText+="font-size:100%;color: rgba(0,0,0,1);left: 0;transition: 1s;");
+    </script>
+
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div>
+</body>
+</html>
