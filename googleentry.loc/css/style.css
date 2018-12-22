@@ -5,33 +5,19 @@
 body{
     font-family: Verdana;
 }
-#goo_log{
-    width: 450px;
-    height: 500px;
-    margin: 165px auto auto auto;
-    border: solid 1px #ccc;
-    border-radius: 8px; 
-}
-#goo_pass{
-    width: 450px;
-    height: 500px;
-    margin: 165px auto auto auto;
-    border: solid 1px #ccc;
-    border-radius: 8px; 
-}
 .gwrap{
     width: 420px;
     height: 400px;
-    background: snow;
     margin: 50px auto;
+    /* background: #ccc; */
 }
 .glogo{
-    width: 90px;
-    height: 30px;
-    margin: auto 152px;
+    height: 25px;
+    position: relative;
+    left: 173px;
 }
 .entry{
-  width: 395px;
+  width: 420px;
   height: 70px;
   margin: auto auto;
 }
@@ -113,8 +99,7 @@ margin: 25px 0;;
         background: none;
     }
     #crt:hover{
-background: #F8F8FF;
-
+background: #F6FAFE;
     }
     .nxt{
 width: 90px;
@@ -129,25 +114,74 @@ cursor: pointer;
     box-shadow: 0 1px 1px #5D80B6;
     
 }
-#slider{
 
-    width: 450px;
-    height: 500px;
-    border: 5px solid black;
-    margin: 50px auto;
-    overflow: hidden;
+
+
+/* Слайдер */
+
+#slider{
+width: 452px;
+height: 520px;
+margin: 90px auto;
+overflow: hidden;
 }
+
 #polosa {
-    background: pink;
-    width: 900px;
+    height: 500px;
+    width: 920px;
     position: relative;
+    top: 10px;
     left: 0;
     transition: all ease 1s;
 }
-
-#goo_pass{
-position: absolute;
-overflow: hidden;
-width: 450px;
-float: left;
+#goo{
+    width: 450px;
+    height: 500px;
+    border: solid 1px #ccc;
+    border-radius: 8px; 
+    float: left;
 }
+/* Проверка пароля */
+#goo2{
+    width: 450px;
+    height: 500px;
+    border: solid 1px #ccc;
+    border-radius: 8px; 
+    float: left;
+}
+.greet{
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    left: 100px;
+    padding: 12px 0 0 0;
+}
+.entry2{
+    width: 420px;
+    height: 70px;
+    margin: auto auto;
+    padding: 0 0 30px 0;
+  }
+  .entry span{
+      margin: auto 160px;
+      line-height: 2em;
+      font-size: 22px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 100;
+  }
+ .mini{
+     width: 175px;
+     height: 30px;
+     position: relative;
+     border: solid 1px #ccc;
+     border-radius: 20px;
+     left: 115px;
+     bottom: 55px;
+ } 
+ .next2{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana;
+    margin: 40px 0;;
+        }
