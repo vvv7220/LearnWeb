@@ -9,11 +9,35 @@
 	<link rel="stylesheet" href = "css/style.css">
 </head>
 <body>
-<div id="slider">
- <div id="polosa">
-  <div id="goo"></div>
-  <div id="goo2"></div>
- </div>
-</div>
+  <input type="text" id="fild" placeholder="Телефон или адрес эл. почты">
+<style>
+  #fild{
+      width: 360px;
+      height: 55px;
+      border: solid 1px rgb(32, 33, 36);
+      border-radius: 4px;
+      display: block;
+      padding-left: 1rem;
+      margin: 100px auto;
+      z-index: 0;
+  }
+  #fild::placeholder{
+      font-size: 16px;
+      color: #088;
+  }
+  #fild:focus::placeholder{
+      color:#5D80B6;
+    font-size:13px;
+    top:-30px;
+    width:185px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #fff;
+  }
+  #fild:focus{
+    
+  }
+</style>
 </body>
 </html>

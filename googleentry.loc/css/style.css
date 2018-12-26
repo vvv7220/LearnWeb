@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic,cyrillic-ext');
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: Verdana;
+    font-family: 'Roboto', sans-serif;
 }
 .gwrap{
     width: 420px;
@@ -14,48 +17,46 @@ body{
 .glogo{
     height: 25px;
     position: relative;
-    left: 173px;
+    left: 175px;
 }
-.entry{
+.entry1{
   width: 420px;
   height: 70px;
   margin: auto auto;
 }
-.entry span{
-    margin: auto 160px ;
+.entry1 span{
+    margin: auto 183px ;
     line-height: 2em;
     font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
 }
 .advice{
-    font-size: 14px;
-    margin: auto 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    padding: 0 0 0 95px;
+    font-weight: 400;
 }
-.fild{
+#fild{
 width: 360px;
 height: 55px;
-border: solid 2px #5D80B6;
-border-radius: 5px;
+/* border: solid 2px #5D80B6 #81878C; */
+border: solid 1px rgb(32, 33, 36);
+border-radius: 4px;
 margin: auto auto;
 display: block;
+padding: 0 0 0 5px;
+color: #202124;
+font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
-  
-.ftext{
-width: 180px;
-height: 20px;
-background: #fff;
-color: #5D80B6;
-position: relative;
-top: 8px;
-left: 35px;
-padding: 4px;
-font-size: 12px;
-font-family: verdana;
+
+.fChange{
+    color:#5D80B6;
+    font-size:13px;
+    top:12px;
+    width:185px;
 }
+
 .remind{
-font-family: Verdana;
 font-size: 12px;
 color: #5D80B6;
 margin: 30px 28px;
@@ -63,7 +64,6 @@ font-weight: 700;
 display: inline-block;
 }
 .remind2{
-    font-family: Verdana;
     font-size: 12px;
     color: #afafb2;
     font-weight: 400;
@@ -71,7 +71,6 @@ display: inline-block;
     padding: 28px 28px;
     }
     .remind3{
-        font-family: Verdana;
         font-size: 12px;
         color: #5D80B6;
         margin: 28px 3px;
@@ -101,19 +100,7 @@ margin: 25px 0;;
     #crt:hover{
 background: #F6FAFE;
     }
-    .nxt{
-width: 90px;
-height: 37px;
-border-radius: 5px;
-background: #1373ea;
-color: #fff;
-border: none;
-cursor: pointer;
-    }
-.nxt:hover{
-    box-shadow: 0 1px 1px #5D80B6;
-    
-}
+
 
 
 
@@ -177,6 +164,21 @@ overflow: hidden;
      border-radius: 20px;
      left: 115px;
      bottom: 55px;
+     /* font-size: 14px;
+     color: red;
+     padding: 5px 10px;
+     text-align: center; */
+
+color: #3c4043;
+cursor: pointer;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: .25px;
+line-height: 2.1em;
+padding-left: 10px;
+text-align: center;
+letter-spacing: 0.25px;
  } 
  .next2{
     height: 60px;
@@ -185,3 +187,46 @@ overflow: hidden;
     font-family: Verdana;
     margin: 40px 0;;
         }
+
+        #ftext{
+            font-size: 16px;
+            padding: 0 0 0 5px;
+            color: #81878C;
+            font-weight: 400;
+            position: relative;
+            top: 40px;
+            left: 40px;
+            display: block;
+            height: 20px;
+            width: 225px;
+            background: #fff;
+        }
+#ftext.move {
+            top: 12px; 
+            width: 185px; 
+            color: #5D80B6;
+            font-size: 13px; 
+          }
+
+/* Программирование кнопки Далее */
+          .nxt{
+            width: 90px;
+            height: 37px;
+            border-radius: 5px;
+            background: #1373ea;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+                }
+            .nxt:hover{
+                box-shadow: 0 1px 1px #5D80B6;
+                
+            }
+            #gsvg{
+position: relative;
+left: 120px;
+bottom: 19px;
+width: 40px;
+height: 30px;
+
+            }
