@@ -23,7 +23,12 @@ fild.onfocus = function(){
 ftext.className="move";
 }
 fild.onblur = function(){
+  if(this.value){
+    ftext.className="move";
+  }
+  else{
   ftext.className="";
+}
   }
 }
 //Программирование кнопки Далее
